@@ -17,18 +17,18 @@ class Column extends React.Component {
   }
 
   addCard(title){
-  this.setState(state => (
-    {
-      cards: [
-        ...state.cards,
-        {
-          key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
-          title,
-        }
-      ]
-    }
-  ));
-}
+    this.setState(state => (
+      {
+        cards: [
+          ...state.cards,
+          {
+            key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
+            title,
+          },
+        ],
+      }
+    ));
+  }
 
   render() {
     return (
@@ -41,14 +41,14 @@ class Column extends React.Component {
         </h3>
         <div className={styles.cards}>
           {this.state.cards.map(({key, ...cardProps}) => (
-          <Card key={key} {...cardProps} />
+            <Card key={key} {...cardProps} />
           ))}
         </div>
         <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 
