@@ -1,5 +1,4 @@
 import {connect} from 'react-redux';
-//import {createAction_changeSearchString} from '../../redux/searchStringRedux';
 import SearchResults from './SearchResults';
 import {getCards} from '../../redux/cardsRedux';
 
