@@ -11,7 +11,7 @@ export const settings = {
     icon: 'search',
   },
   header: {
-    icon: 'cat',
+    icon: 'home',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',

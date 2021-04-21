@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 class Card extends React.Component {
   static propTypes = {
     title: PropTypes.string,
+    id: PropTypes.string,
+    index: PropTypes.number,
   };
 
   render() {

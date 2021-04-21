@@ -21,6 +21,7 @@ class List extends React.Component {
   }
   static defaultProps = {
     description: settings.defaultListDescription,
+    icon: settings.defaultColumnIcon,
   }
 
   render() {
@@ -28,7 +29,7 @@ class List extends React.Component {
     return (
       <Container>
         <section className={styles.component}>
-          <Hero titleText={title} imageUrl={image} />
+          <Hero titleText={title} image={image} />
           <div className={styles.description}>
             {ReactHtmlParser(description)}
           </div>
